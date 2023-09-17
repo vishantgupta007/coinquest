@@ -1,0 +1,154 @@
+.featured {
+	width: 100%;
+	padding: 8rem 0;
+	background-color: var(--background);
+	clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+}
+
+.featured .container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.featured .left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 2rem;
+}
+
+.featured .left p {
+	margin: 1.5rem 0;
+}
+
+.featured .left .btn {
+	align-self: flex-start;
+}
+
+.featured .left h2 {
+	color: var(--primary);
+	text-align: starts;
+}
+
+.featured .right {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(3, 1fr);
+	margin: 0 auto;
+}
+
+.featured .right .card {
+	display: flex;
+	flex-direction: column;
+	padding: 12px 22px;
+	margin: 0.4rem;
+	width: 170px;
+	height: 170px;
+	border-radius: 24px;
+	border: 1px solid #d3d3d3;
+	box-shadow: rgb(0 0 0 / 12%) 0px 8px 24px;
+	text-align: center;
+	transition: 300ms all ease;
+	transform: scale(1);
+}
+
+.featured .right .card:hover {
+	box-shadow: rgb(0 0 0 / 20%) 0px 8px 24px;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.featured .card .top {
+	display: flex;
+	flex-direction: column;
+}
+
+.featured .card .top h5 {
+	color: var(--primary);
+	letter-spacing: 1.1px;
+}
+
+.featured .card .top p {
+	text-align: center;
+}
+
+.featured .right img {
+	width: 50px;
+	margin: auto;
+	padding: 0.2rem 0;
+}
+
+.featured .icon {
+	font-size: 36px;
+	margin: auto;
+	padding-top: 6px;
+	justify-content: center;
+	align-items: center;
+}
+
+.featured span {
+	font-size: 24px;
+}
+.arrow {
+	display: flex;
+	align-items: center;
+	gap: 1.1rem;
+	justify-content: center;
+}
+
+.green {
+	color: var(--primary);
+}
+
+.red {
+	color: #ff0000;
+}
+
+@media screen and (max-width: 940px) {
+	.featured .container {
+		grid-template-columns: 1fr;
+	}
+	.featured .left {
+		text-align: center;
+	}
+
+	.featured .left .btn {
+		margin: 0 auto;
+	}
+	.featured .left h2 {
+		text-align: center;
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 675px) {
+	.featured .right {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 478px) {
+	.featured .container .right .card {
+		width: 100%;
+	}
+	.featured span {
+		font-size: 20px;
+	}
+
+	.featured .left p {
+		text-align: center;
+	}
+	.featured .left h2 {
+		text-align: start;
+	}
+
+	.featured .right {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.top p {
+		text-align: center;
+	}
+}

@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./Home";
+import Coin from "./pages/Coins/Coin";
+import Footer from "./components/Footer";
+import About from "./pages/About/About";
+import Notfound from "./pages/Notfound/Notfound";
+// import ScrollToTop from "./components/ScrollToTop";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<BrowserRouter>
+			<Navbar />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="coins" element={<Coin />} />
+				<Route path="about" element={<About />} />
+				<Route path="*" element={<Notfound />} />
+			</Routes>
+			<Footer />/
+			{/* <ScrollToTop /> */}
+		</BrowserRouter>
+	);
+};
 
 export default App;

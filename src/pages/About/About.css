@@ -1,0 +1,77 @@
+.about {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 3rem auto;
+	justify-content: center;
+	align-items: center;
+	padding: 0 120px;
+}
+
+.about .img-container {
+	width: 100%;
+	display: flex;
+}
+.about img {
+	max-width: 80%;
+	margin: auto;
+}
+
+.right-side .desc h1 {
+	padding: 1rem 0;
+	color: var(--primary);
+}
+
+.right-side .desc h3 {
+	color: var(--primary);
+}
+
+.right-side .desc h3::before {
+	content: "";
+	display: inline-block;
+	width: 50px;
+	height: 3px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	background: linear-gradient(to right, #00e24f 0%, #00adff 51%, #00e231 100%);
+}
+
+.right-side .desc p {
+	color: #777;
+	margin: 10px 0 15px 0;
+}
+
+.right-side .points {
+	padding: 5px 0;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.right-side .points li {
+	padding: 10px 0;
+	position: relative;
+	color: #222;
+}
+
+.right-side .points li::before {
+	content: "✓";
+	position: absolute;
+	left: -18px;
+	font-size: 18px;
+	color: var(--primary);
+	font-weight: 700;
+}
+
+@media screen and (max-width: 940px) {
+	.about {
+		grid-template-columns: 1fr;
+		margin: 2rem 0;
+		padding: 0 80px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.about {
+		padding: 0 50px;
+	}
+	.right-side .desc h1 {
+		font-size: 26px;
+	}
+}
