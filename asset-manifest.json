@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/coinquest/static/css/main.9f448262.css",
+    "main.js": "/coinquest/static/js/main.14940b8f.js",
+    "static/media/trade.png": "/coinquest/static/media/trade.a2c09083fbde76e9cac2.png",
+    "static/media/hero-img.png": "/coinquest/static/media/hero-img.66b9eb77caa3ac6d4fe8.png",
+    "index.html": "/coinquest/index.html",
+    "main.9f448262.css.map": "/coinquest/static/css/main.9f448262.css.map",
+    "main.14940b8f.js.map": "/coinquest/static/js/main.14940b8f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f448262.css",
+    "static/js/main.14940b8f.js"
+  ]
+}
