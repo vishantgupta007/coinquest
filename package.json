@@ -1,5 +1,6 @@
 {
 	"name": "coinquest",
+  "homepage": "https://vishantgupta007.github.io/coinquest",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
